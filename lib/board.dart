@@ -21,12 +21,8 @@ class _GameBoardState extends State<GameBoard> {
         physics: const NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
             crossAxisCount: rowLength),
-        itemBuilder: (context, index) => Container(
-          decoration: BoxDecoration(
-              color: const Color.fromARGB(255, 135, 147, 113),
-              borderRadius: BorderRadius.circular(2)),
-          margin: EdgeInsets.all(1),
-        ),
+        itemBuilder: (context, index) =>
+            Pixel(color: const Color.fromARGB(255, 133, 153, 110)),
       ),
     );
   }
